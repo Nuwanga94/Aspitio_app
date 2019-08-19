@@ -1,0 +1,29 @@
+<div class="container div2">
+    <h1>Please Fill this Form</h1>
+    </div>
+    
+    <div class="container div1">
+    
+    
+    <form (ngSubmit)= "onSubmit(form1)"  #form1="ngForm">
+    
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Enter Note Topic" name="noteTopic" [ngModel]="noteTopic">
+            </mat-form-field>
+          
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Enter Note" name="note" [ngModel]="note">
+            </mat-form-field>
+          
+         
+    
+        
+          <br><br>
+          <button mat-raised-button color="primary" type="submit">OK</button> 
+          
+          
+          </form>
+          <br>
+          <button routerLink="/note" mat-raised-button color="warn" type="button">View Notes</button>
+    </div>
+          

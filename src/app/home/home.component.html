@@ -1,0 +1,30 @@
+<div class="container div2">
+    <h1>Welcome</h1>
+    </div>
+    
+    <div class="container div1">
+    
+    
+    <form (ngSubmit)= "onSubmit(form1)"  #form1="ngForm">
+    
+           
+    
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Enter Email" name="userEmail" [(ngModel)]= "newUser.userEmail">
+            </mat-form-field>
+          
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Enter Password"input type="password" name="userPasswordHash" [(ngModel)]= "newUser.userPasswordHash">
+              </mat-form-field>
+            
+          
+      
+          <br><br>
+          <button mat-raised-button color="primary" type="submit">Login</button> 
+          
+          
+          </form>
+          <br>
+          <button routerLink="/register" mat-raised-button color="warn" type="button">Register</button>
+    </div>
+          
